@@ -12,10 +12,8 @@ this modlue 's purpose,to help you to change your label color for many2one type 
 
 How To Use:
 -----------------------------------------------
-before install:
-edit addons/base/rng/view.rng file,add "<rng:optional><rng:attribute name="color"/></rng:optional>" to the file at line 545(v 7.0),
-then add color attribute to your many2one feild,specify the color of label. eg:
- <feild name="test" color="red"/>
+add color attribute to your many2one feild,specify the color in options attributes of label. eg:
+ <feild name="test" options="{'color':'red'}"/> . That seems better.
         """,
         "dpends":['web'],
         "js":['static/js/demo.js'],
