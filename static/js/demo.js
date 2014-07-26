@@ -28,8 +28,8 @@ openerp.web_label_color=function(instance){
 		instance.web.form.FieldMany2One.include({
 				display_string:function(str){
 						this._super(str);
-						if(this.node.attrs.color){
-								this.$label.css('color',this.node.attrs.color);
+						if(this.options.color){
+								this.$label.css('color',this.options.color);
 						}
 				}
 		});
